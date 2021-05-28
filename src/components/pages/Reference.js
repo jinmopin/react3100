@@ -1,9 +1,11 @@
+import axios from "axios";
 import React from "react";
-// import Header from "../Header";
-// import Layout from "../Layout";
-// import Footer from "../Footer";
-// import WrapTitle from "../basics/WrapTitle";
-// import { Link } from "react-router-dom";
+import Loading from "../basics/Loading";
+import Header from "../Header";
+import Layout from "../Layout";
+import Footer from "../Footer";
+import WrapTitle from "../basics/WrapTitle";
+import { Link } from "react-router-dom";
 
 // function ReferText({alpha, attr, desc}) {
 //     return (
@@ -49,54 +51,114 @@ import React from "react";
 
 // function Reference() {
 //     return (
-//         <div id="wrap" className="light">
-//             <Header info="none"/>
-//             <Layout>
-//                 <section id="referCont">
-//                     <div className="container">
-//                         <WrapTitle text={["HTML", "reference"]} />
-//                         <div className="refer-cont">
-//                             <div className="refer-table">
-//                                 <h3>CSS REFERENCE</h3>
-//                                 <ul>
-//                                     {referAttr.map((text) => (
-//                                         <ReferText 
-//                                         key={text.attr}
-//                                         alpha={text.alpha}
-//                                         attr={text.attr}
-//                                         desc={text.desc}
-//                                         />
-//                                     ))}
-//                                 </ul>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </section>
-//             </Layout>
-//             <Footer />
+        // <div id="wrap" className="light">
+        //     <Header info="none"/>
+        //     <Layout>
+        //         <section id="referCont">
+        //             <div className="container">
+        //                 <WrapTitle text={["HTML", "reference"]} />
+        //                 <div className="refer-cont">
+        //                     <div className="refer-table">
+        //                         <h3>CSS REFERENCE</h3>
+        //                         <ul>
+        //                             {referAttr.map((text) => (
+        //                                 <ReferText 
+        //                                 key={text.attr}
+        //                                 alpha={text.alpha}
+        //                                 attr={text.attr}
+        //                                 desc={text.desc}
+        //                                 />
+        //                             ))}
+        //                         </ul>
+        //                     </div>
+        //                 </div>
+        //             </div>
+        //         </section>
+        //     </Layout>
+        //     <Footer />
 //         </div>
 //     );
 // }
 
-
+function ReferText({num, alpha, attr, desc}) {
+    return (
+        <li>
+            <Link to="/">
+                <span className="alpha">{alpha}</span>
+                <span className="attr">{attr}</span>
+                <span className="desc">{desc}</span>
+            </Link>
+        </li>
+    );
+}
 
 
 
 class Reference extends React.Component {
     state = {
         isLoading: true,
+        refers : [],
+    };
+
+    getRefer = async () => {            // async = 
+        const {
+          data: {
+            data: { htmlRefer },
+          },
+        } = await axios.get(            // await = 다운받는 동안 기다려라
+            "https://jinmopin.github.io/react3100/src/json/reference.json"
+            )
+        // console.log(htmlRefer);
+        this.setState({ htmlRefer, isLoading: false });
+
     };
     
     componentDidMount() {
         setTimeout(() => {
-            this.setState({isLoading: false})
+            //this.setState({isLoading: false});
+            this.getRefer();
         }, 3000);
     }
 
-    render(){
-        const { isLoading } = this.state;               // 괄호 안은 true값 존재
-        return <div>{ isLoading ? "로딩중" : "준비되었습니다." }</div>;
-    }
+    render() {
+        const { isLoading } = this.state;           //괄호 안은 true값 존재
+        const { htmlRefer } = this.htmlRefer;
+        return (
+          <div>
+            {isLoading ? (
+              <Loading />
+            ) : (
+              <div id="wrap" className="light">
+                <Header info="none" />
+                <Layout>
+                  <section id="referCont">
+                    <div className="container">
+                      <WrapTitle text={["HTML", "reference"]} />
+                      <div className="refer-cont">
+                        <div className="refer-table">
+                          <h3>CSS Reference</h3>
+                          <ul>
+                              {htmlRefer.map((text) => (
+                                  <ReferText 
+                                    key={text.num}
+                                    alpha={text.alpha}
+                                    attr={text.attr}
+                                    desc={text.desc}
+                                  />
+                              ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </Layout>
+                <Footer />
+              </div>
+            )}
+          </div>
+        );
+      }
+      
 }
 
 export default Reference;
