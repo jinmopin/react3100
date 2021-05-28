@@ -1,0 +1,309 @@
+{
+    "data": {
+        "type": "html",
+        "htmlRefer": [
+            {
+                "num": 1,
+                "alpha": "A",
+                "attr": "align-content",
+                "desc": "align-content 속성은 플렉스 아이템의 상하 정렬을 설정합니다."
+            },
+            {
+                "num": 2,
+                "alpha": "",
+                "attr": "animation",
+                "desc": "animation 속성은 애니메이션을 설정합니다."
+            },
+            {
+                "num": 3,
+                "alpha": "",
+                "attr": "animation-delay",
+                "desc": "animation-delay 속성은 요소가 로드된 후 애니메이션이 시작될 때 까지의 시간을 나타냅니다."
+            },
+            {
+                "num": 4,
+                "alpha": "",
+                "attr": "animation-direction",
+                "desc": "animation-direction 속성은 애니메이션 움직임 방향을 설정합니다."
+            },
+            {
+                "num": 5,
+                "alpha": "",
+                "attr": "animation-duration",
+                "desc": "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다."
+            },
+            {
+                "num": 6,
+                "alpha": "",
+                "attr": "animation-fill-mode",
+                "desc": "animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다."
+            },
+            {
+                "num": 7,
+                "alpha": "",
+                "attr": "animation-duration",
+                "desc": "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다."
+            },
+            {
+                "num": 8,
+                "alpha": "",
+                "attr": "animation-iteration-count",
+                "desc": "animation-iteration-count 속성은 애니메이션 반복 횟수를 설정합니다."
+            },
+            {
+                "num": 9,
+                "alpha": "",
+                "attr": "animation-name",
+                "desc": "animation-name 속성은 애니메이션 keyframe 이름을 설정합니다."
+            },
+            {
+                "num": 10,
+                "alpha": "",
+                "attr": "animation-play-state",
+                "desc": "animation-play-state 속성은 애니메이션 진행상태를 설정합니다."
+            },
+            {
+                "num": 11,
+                "alpha": "",
+                "attr": "animation-timing-function",
+                "desc": "animation-play-state 속성은 애니메이션 진행상태를 설정합니다."
+            },
+            {
+                "num": 12,
+                "alpha": "",
+                "attr": "appearance",
+                "desc": "appearance 속성은 폼 요소의 외관을 설정합니다."
+            },
+            {
+                "num": 13,
+                "alpha": "B",
+                "attr": "backdrop-filter",
+                "desc": "backdrop-filter 속성은 요소 뒤 영역에 흐림이나 색상 시프트 등 그래픽 효과를 적용할 수 있는 속성입니다."
+            },
+            {
+                "num": 14,
+                "alpha": "",
+                "attr": "backface-visibility",
+                "desc": "backface-visibility 속성은 요소의 뒷면을 정의합니다."
+            },
+            {
+                "num": 15,
+                "alpha": "",
+                "attr": "background",
+                "desc": "background 속성은 색상, 이미지, 원점, 크기, 반복 등 여러 배경 스타일을 한 번에 지정합니다."
+            },
+            {
+                "num": 16,
+                "alpha": "",
+                "attr": "background-attachment",
+                "desc": "ackground-attachment 속성은 배경 이미지를 뷰포트 내에서 고정할지, 아니면 자신의 컨테이닝 블록과 함께 스크롤할지 지정합니다."
+            },
+            {
+                "num": 17,
+                "alpha": "",
+                "attr": "background-blend-mode",
+                "desc": "background-blend-mode 속성은 blend-mode요소의 각 배경 레이어를 지정하는데 사용됩니다."
+            },
+            {
+                "num": 18,
+                "alpha": "",
+                "attr": "background",
+                "desc": "background 속성은 색상, 이미지, 원점, 크기, 반복 등 여러 배경 스타일을 한 번에 지정합니다."
+            },
+            {
+                "num": 19,
+                "alpha": "",
+                "attr": "background-clip",
+                "desc": "background-clip 속성은 요소의 배경이 테두리, 안쪽 여백, 콘텐츠 상자 중 어디까지 차지할 지 지정합니다."
+            },
+            {
+                "num": 20,
+                "alpha": "",
+                "attr": "background",
+                "desc": "background 속성은 색상, 이미지, 원점, 크기, 반복 등 여러 배경 스타일을 한 번에 지정합니다."
+            },
+            {
+                "num": 21,
+                "alpha": "",
+                "attr": "background-color",
+                "desc": "background-color 속성은 요소의 배경 색을 지정합니다."
+            },
+            {
+                "num": 22,
+                "alpha": "",
+                "attr": "background-image",
+                "desc": "background-image 속성은 요소의 배경 이미지를 한 개 혹은 여러 개를 지정합니다."
+            },
+            {
+                "num": 23,
+                "alpha": "",
+                "attr": "background-origin",
+                "desc": "background-origin 속성은 배경의 원점을 테두리 시작점, 테두리 내부, 안쪽 여백 내부 중 하나로 지정합니다."
+            },
+            {
+                "num": 24,
+                "alpha": "",
+                "attr": "background-image",
+                "desc": "background-image 속성은 요소의 배경 이미지를 한 개 혹은 여러 개를 지정합니다."
+            },
+            {
+                "num": 25,
+                "alpha": "",
+                "attr": "background-position",
+                "desc": "background-position 속성은 배경 이미지 위치 지정 영역 내에서 크기 조정, 초기 위치를 정의합니다."
+            },
+            {
+                "num": 26,
+                "alpha": "",
+                "attr": "background-repeat",
+                "desc": "background-repeat 속성은 배경 이미지의 반복 방법을 지정합니다."
+            },
+            {
+                "num": 27,
+                "alpha": "",
+                "attr": "background-image",
+                "desc": "background-image 속성은 요소의 배경 이미지를 한 개 혹은 여러 개를 지정합니다."
+            },
+            {
+                "num": 28,
+                "alpha": "",
+                "attr": "background-size",
+                "desc": "background-size 속성은 요소 배경 이미지의 크기를 설정합니다."
+            },
+            {
+                "num": 29,
+                "alpha": "",
+                "attr": "border",
+                "desc": "border 속성은 요소의 테두리를 설정합니다."
+            },
+            {
+                "num": 30,
+                "alpha": "",
+                "attr": "border-bottom",
+                "desc": "border-bottom 속성은 요소의 아래쪽 테두리를 설정합니다."
+            },
+            {
+                "num": 31,
+                "alpha": "",
+                "attr": "background-image",
+                "desc": "background-image 속성은 요소의 배경 이미지를 한 개 혹은 여러 개를 지정합니다."
+            },
+            {
+                "num": 32,
+                "alpha": "",
+                "attr": "border-bottom-color",
+                "desc": "border-bottom-color 속성은 요소의 아래쪽 테두리 색상을 지정합니다."
+            },
+            {
+                "num": 33,
+                "alpha": "",
+                "attr": "border-bottom-left-radius",
+                "desc": "border-bottom-left-radius 속성은 좌측 하단 모서리의 곡률을 조정합니다."
+            },
+            {
+                "num": 34,
+                "alpha": "",
+                "attr": "border-bottom-right-radius",
+                "desc": "border-bottom-right-radius 속성은 우측 하단 모서리의 곡률을 조정합니다."
+            },
+            {
+                "num": 35,
+                "alpha": "",
+                "attr": "border-bottom-style",
+                "desc": "border-bottom-style 속성은 요소의 아래쪽 선 스타일을 설정합니다."
+            },
+            {
+                "num": 36,
+                "alpha": "",
+                "attr": "border-bottom-width",
+                "desc": "border-bottom-width 속성은 요소의 아래쪽 테두리의 폭을 설정합니다."
+            },
+            {
+                "num": 37,
+                "alpha": "",
+                "attr": "border-collapse",
+                "desc": "border-collapse 속성은 표 테두리가 분리또는 상쇄될지를 결정합니다."
+            },
+            {
+                "num": 38,
+                "alpha": "",
+                "attr": "border-color",
+                "desc": "border-color 속성은 모든 면의 테두리 색상을 설정합니다."
+            },
+            {
+                "num": 39,
+                "alpha": "",
+                "attr": "border-image",
+                "desc": "border-image 속성은 요소의 주위에 이미지를 그립니다."
+            },
+            {
+                "num": 40,
+                "alpha": "",
+                "attr": "border-image-outset",
+                "desc": "border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다."
+            },
+            {
+                "num": 41,
+                "alpha": "",
+                "attr": "border-bottom-color",
+                "desc": "border-bottom-color 속성은 요소의 아래쪽 테두리 색상을 지정합니다."
+            },
+            {
+                "num": 42,
+                "alpha": "",
+                "attr": "border-image-repeat",
+                "desc": "border-bottom-color 속성은 요소의 아래쪽 테두리 색상을 지정합니다."
+            },
+            {
+                "num": 43,
+                "alpha": "",
+                "attr": "border-bottom-color",
+                "desc": "border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다."
+            },
+            {
+                "num": 44,
+                "alpha": "",
+                "attr": "border-image-slice",
+                "desc": "border-image-slice 속성은 테두리 이미지 크기 속성을 설정합니다."
+            },
+            {
+                "num": 45,
+                "alpha": "",
+                "attr": "border-bottom-color",
+                "desc": "border-bottom-color 속성은 요소의 아래쪽 테두리 색상을 지정합니다."
+            },
+            {
+                "num": 46,
+                "alpha": "",
+                "attr": "border-image-source",
+                "desc": "border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다."
+            },
+            {
+                "num": 47,
+                "alpha": "",
+                "attr": "border-image-width",
+                "desc": "border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다."
+            },
+            {
+                "num": 48,
+                "alpha": "",
+                "attr": "border-left",
+                "desc": "border-left 속성은 왼쪽 테두리 속성을 설정합니다."
+            },
+            {
+                "num": 49,
+                "alpha": "",
+                "attr": "border-left-color",
+                "desc": "border-left-color 속성은 왼쪽 테두리 색 속성을 설정합니다."
+            },
+            {
+                "num": 50,
+                "alpha": "",
+                "attr": "border-left-style",
+                "desc": "border-left-style 속성은 왼쪽 테두리 스타일 속성을 설정합니다."
+            }
+
+
+        ]
+    }
+}
