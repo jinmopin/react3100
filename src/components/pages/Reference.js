@@ -6,6 +6,7 @@ import Layout from "../Layout";
 import Footer from "../Footer";
 import WrapTitle from "../basics/WrapTitle";
 import { Link } from "react-router-dom";
+import ReferInfo from "../basics/ReferInfo";
 
 // function ReferText({alpha, attr, desc}) {
 //     return (
@@ -121,8 +122,7 @@ class Reference extends React.Component {
     }
 
     render() {
-        const { isLoading } = this.state;           //괄호 안은 true값 존재
-        const { htmlRefer } = this.htmlRefer;
+        const { isLoading, htmlRefer } = this.state;           //괄호 안은 true값 존재
         return (
           <div>
             {isLoading ? (
@@ -138,12 +138,11 @@ class Reference extends React.Component {
                         <div className="refer-table">
                           <h3>CSS Reference</h3>
                           <ul>
-                              {htmlRefer.map((text) => (
-                                  <ReferText 
-                                    key={text.num}
-                                    alpha={text.alpha}
-                                    attr={text.attr}
-                                    desc={text.desc}
+                              {htmlRefer.map((refer) => (
+                                  <ReferInfo 
+                                    alpha={refer.alpha}
+                                    attr={refer.attr}
+                                    desc={refer.desc}
                                   />
                               ))}
                           </ul>
