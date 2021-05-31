@@ -124,7 +124,7 @@ class Reference extends React.Component {
     render() {
         const { isLoading, htmlRefer } = this.state;           //괄호 안은 true값 존재
         return (
-          <div>
+          <>
             {isLoading ? (
               <Loading />
             ) : (
@@ -154,7 +154,7 @@ class Reference extends React.Component {
                 <Footer />
               </div>
             )}
-          </div>
+            </>
         );
       }
       

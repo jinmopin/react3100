@@ -10,7 +10,7 @@
     padding: 18rem 0 10rem;
   
     h1 {
-      color: #000;
+      color: #fff;
       font-size: 10vmax;
       line-height: 0.85;
       letter-spacing: -0.0275em;
@@ -22,6 +22,9 @@
         opacity: 1;
       }
     }
+  }
+  .light .wrap__title h1 {
+    color: #000;
   }
   
   /* 모든 페이지의 헤더
